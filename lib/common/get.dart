@@ -332,7 +332,7 @@ Future<dynamic> getSchedule([BuildContext? context]) async {
 }
 
 Future<List<List<List<Course>>>> getScheduleChanges(String id, List<List<List<Course>>> schedule) async {
-  if (!AppData.showScheduleChange) {
+  if (!AppData.showScheduleChange || AppData.startSchoolSoon) {
     return schedule;
   }
   print('getScheduleChanges');
