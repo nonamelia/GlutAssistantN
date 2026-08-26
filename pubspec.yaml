@@ -15,7 +15,7 @@ publish_to: "https://pub.flutter-io.cn" # Remove this line if you wish to publis
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.7.260317+96
+version: 1.7.260826+98
 
 environment:
   sdk: ">=2.14.0 <4.0.0"
@@ -38,10 +38,10 @@ dependencies:
   badges: ^3.1.2
   remixicon: ^1.3.0
   flutter_swiper_view: ^1.1.8
-  home_widget: ^0.9.0
+  home_widget: ^0.9.3
   workmanager: ^0.9.0+3
   package_info_plus: ^9.0.0
-  sentry_flutter: ^9.14.0
+  sentry_flutter: ^9.27.0
   jni: ^0.14.2
   share_plus: ^12.0.1
   encrypt: ^5.0.3
@@ -50,7 +50,7 @@ dependencies:
   flutter_dotenv: ^6.0.0
   device_info_plus: ^12.3.0
 dev_dependencies:
-  sentry_dart_plugin: ^3.2.1
+  sentry_dart_plugin: ^3.4.0
   flutter_test:
     sdk: flutter
 
@@ -115,10 +115,9 @@ requirements:
 sentry:
   project: glut-assistant-n
   org: lightningdevelopmentteam
-  # Disable automatic upload of debug symbols
-  # upload_debug_symbols: false
-  # Enable source context
   upload_source_context: true
-  # Enable source maps
   upload_source_maps: true
   upload_sources: true
+  upload_debug_symbols: true
+  wait_for_processing: true
+  dart_symbol_map_path: build/mapping.json

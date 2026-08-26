@@ -93,19 +93,27 @@ Kotlin 2.3.0
 Flutter 3.89.9  
 Dart 3.10.8
 
-#### 编译之前:
+[//]: # (#### 编译之前:)
 
-请将 `es.antonborri.home_widget.HomeWidgetBackgroundReceiver` 插件类转成可继承的类
+[//]: # ()
+[//]: # (请将 `es.antonborri.home_widget.HomeWidgetBackgroundReceiver` 插件类转成可继承的类)
 
-```kotlin
-class HomeWidgetBackgroundReceiver : BroadcastReceiver()
-```
+[//]: # ()
+[//]: # (```kotlin)
 
-添加 `open` 关键字
+[//]: # (class HomeWidgetBackgroundReceiver : BroadcastReceiver&#40;&#41;)
 
-```kotlin
-open class HomeWidgetBackgroundReceiver : BroadcastReceiver()
-```
+[//]: # (```)
+
+[//]: # ()
+[//]: # (添加 `open` 关键字)
+
+[//]: # ()
+[//]: # (```kotlin)
+
+[//]: # (open class HomeWidgetBackgroundReceiver : BroadcastReceiver&#40;&#41;)
+
+[//]: # (```)
 
 #### 编译项目:
 
